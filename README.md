@@ -1,2 +1,2 @@
 # webwork_reminder
-remind Bobo doing homework
+remind Bobo to do homework
