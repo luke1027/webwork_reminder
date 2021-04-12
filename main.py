@@ -5,9 +5,9 @@ import smtplib
 
 
 def send_email(content):
-    my_email = "testpython2710@gmail.com"
-    password = "forget1111"
-    target_email = "b09504087@ntu.edu.tw"
+    my_email = "XXX@gmail.com"
+    password = "XXX"
+    target_email = "XXX"
     with smtplib.SMTP("smtp.gmail.com", 587) as connection:
         connection.starttls()
         connection.login(user=my_email, password=password)
@@ -18,7 +18,7 @@ def send_email(content):
                 f"{content}")
 
 
-URL = "http://webwork.math.ntu.edu.tw/webwork2/1092MATH4008_07?user=B09504117&passwd=guzvot-qohgom-kuvGo9"
+URL = "http://webwork.math.ntu.edu.tw/webwork2/1092MATH4008_07?user=XXX&passwd=XXX"
 data = requests.get(URL).text
 soup = BeautifulSoup(data, "html.parser")
 table = soup.find("table")
